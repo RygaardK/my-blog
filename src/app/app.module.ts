@@ -3,10 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { RecentpostComponent } from './recentpost/recentpost.component';
+import { AllpostComponent } from './allpost/allpost.component';
+import { FivepostComponent } from './fivepost/fivepost.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    RecentpostComponent,
+    AllpostComponent,
+    FivepostComponent
   ],
   imports: [
     BrowserModule,
