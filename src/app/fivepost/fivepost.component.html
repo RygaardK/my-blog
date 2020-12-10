@@ -1,1 +1,6 @@
-<p>fivepost works!</p>
+<p>Fivepost works!</p>
+<ul *ngFor="let post of fivePost">
+    <li>
+        {{ post.id }} / {{ post.title }} / {{ post.content.substring(0,250) }}
+    </li>
+</ul>

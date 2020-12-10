@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RecentpostComponent } from './recentpost/recentpost.component';
 import { AllpostComponent } from './allpost/allpost.component';
 import { FivepostComponent } from './fivepost/fivepost.component';
+import { CreatepostComponent } from './createpost/createpost.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FivepostComponent } from './fivepost/fivepost.component';
     FooterComponent,
     RecentpostComponent,
     AllpostComponent,
-    FivepostComponent
+    FivepostComponent,
+    CreatepostComponent
   ],
   imports: [
     BrowserModule,

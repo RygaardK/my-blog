@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogService, Post } from '../blog.service';
+
 
 @Component({
   selector: 'app-recentpost',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentpostComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: BlogService) {  this.onaPost = this.service.getRecentPost(); }
+  
+  public onaPost:Post = {
+    id: 1,
+    title: "",
+    content: ""
+  };  
+
 
   ngOnInit(): void {
+  
   }
 
 }
