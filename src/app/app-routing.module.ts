@@ -6,6 +6,7 @@ import { FivepostComponent } from './fivepost/fivepost.component';
 import { CreatepostComponent } from './createpost/createpost.component';
 
 const routes: Routes = [
+  { path: '', component: RecentpostComponent},
   { path: 'recent', component: RecentpostComponent },
   { path: 'fiveposts', component: FivepostComponent },
   { path: 'allposts', component: AllpostComponent },
