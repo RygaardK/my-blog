@@ -21,7 +21,6 @@ export class CreatepostComponent implements OnInit {
   constructor(private Service: BlogService) { }
   
   onPost(title, content){
-    console.log('Clicked ', title, content)
     this.Service.createPost(title, content);
     this.postMessage = "The blog post went of!"
   }
