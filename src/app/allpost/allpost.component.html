@@ -1,6 +1,15 @@
-<p>allpost works!</p>
+<h1>All Posts</h1>
 <ul>
     <li *ngFor="let post of ourPosts; index as i; first as ourPosts">
-        <button (click)="deletePost(post.id)">DELETE</button> {{ post.id }} / {{ ourPosts.length }} {{ post.title }} / {{ post.content.substring(0,50) }}
+        <p class="id">
+            {{ post.id }}
+        </p>
+        <p class="title">
+            {{ post.title }}
+        </p>
+        <p class="content">
+            {{ post.content.substring(0,150) }}
+        </p>
+        <button (click)="deletePost(i)">DELETE</button>
     </li>
 </ul>

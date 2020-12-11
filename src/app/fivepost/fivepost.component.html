@@ -1,6 +1,10 @@
-<p>Fivepost works!</p>
+<h1>5 Most Recent Posts</h1>
 <ul *ngFor="let post of fivePost">
     <li>
-        {{ post.id }} / {{ post.title }} / {{ post.content.substring(0,250) }}
+       <p class="id"> {{ post.id }} </p>
+       <p class="title"> {{ post.title }} </p>
+       <p class="content">
+           {{ post.content.substring(0,250) }}
+       </p>
     </li>
 </ul>

@@ -1,0 +1,13 @@
+header {
+    height: 10vh;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li {
+    padding: 1em;
+}
+h1 {
+    padding: 1rem;
+}

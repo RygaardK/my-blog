@@ -1,9 +1,11 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
-
+.jumbotron {
+	background-color: #33333309;
+}
 .form-group {
-	border: 1px solid lightgray;
+	border: 0px solid lightgray;
 	border-radius: 0.3em;
-	padding: 0.4em;
+	padding: 1.4rem;
 	margin: 0.5rem;
 	background-color: #f4f4f4;
 }
@@ -40,3 +42,7 @@ textarea.ng-invalid {
 
 button[disabled] { background-color: #ddd; border-color: #ccc; }
 button[disabled]:hover { cursor: not-allowed; }
+
+h1 {
+    padding: 1rem;
+}
